@@ -1,0 +1,445 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>GREENIC</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+	<!-- css -->
+    <link href="web/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="web/css/swiper.min.css" rel="stylesheet" type="text/css">
+    <link href="web/css/common.css" rel="stylesheet" type="text/css">
+    <link href="web/css/main.css" rel="stylesheet" type="text/css">
+    <link href="web/css/sub.css" rel="stylesheet" type="text/css">
+
+    <!--logo site-->
+<link rel="shortcut icon" href="web/images/main/deco_left.png">
+
+    <script src="web/js/jquery-3.4.1.js"></script>
+    <script src="web/js/swiper.min.js"></script>
+    <script src="web/js/script.js"></script>
+		<style>
+
+		#ball {
+			width:60px;
+			height: 60px;
+			background: none;
+			border : 1px solid #ffbd6a;
+			border-radius: 50%;
+			position: absolute;
+			left:50%;
+			top:50%;
+			margin:-10px 0 0 -10px;
+			pointer-events: none;
+			z-index:9999;
+		  color:white;
+		}
+
+		@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700');
+
+/*폰트*/
+
+/*tilt*/
+.c-logo {
+  $size: 300px;
+  width: $size;
+  height: $size;
+  background-image: url(web/images/sub/maa_333.png);
+
+  box-shadow: 0 20px 27px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+    	background-size: cover;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 4em;
+  font-weight: 300;
+  transform-style: preserve-3d;
+  transform: perspective(500px);
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 20px 70px -10px rgba(black, .7), 0 50px 100px 0 rgba(black, .2);
+    z-index: -1;
+    transform: translateZ(-20px);
+    transition: .7s;
+  }
+
+  > span {
+    display: block;
+    transform: translateZ(50px) scale(.7);
+  }
+
+  &:hover {
+    &:after{
+      transform: translateZ(-50px);
+    }
+  }
+}
+
+
+		</style>
+
+
+
+
+
+
+</head>
+
+<!--마우스효과-->
+<body onLoad = "followMouse()">
+
+		<div id="ball"></div>
+   
+   
+   
+   
+    <div class="header">
+        <a href="index.html" class="logo"></a>
+        <ul class="menu-wrap">
+            <li><a href="travel.html">Travel</a></li>
+            <li class="on"><a href="brand.html">Brand</a></li>
+        </ul>
+    </div>
+    <div class="contents brand">
+        <div class="intro-wrap">
+            <div class="container">
+               
+               
+               
+                <div class="l-wrap">
+                    <p>Tea Museum Gift Shop</p>
+                    
+                    
+                    
+                    <h2 class="txt-type" data-wait="3000" data-words='["GREENIC STORE","GREEN REST", "GIFT TRAVELER"]'></h2>
+
+                    <!--text 지움변동기능-->
+
+                    <h3>보성 티뮤지엄의 기프트샵에 오신 것을 <br>환영합니다.
+                    인기있는 상품들을 구경해<br>보세요.</h3>
+
+
+                    <!--선 호버-->
+                    <button> <a href="#" onMouseOver='this.innerHTML="STORE 문의"' onMouseOut='this.innerHTML="061-538-2536"'>STORE 문의</a>
+                    <a style="color: white;"></a>
+
+                    </button>
+
+                </div>
+                <div class="r-wrap">
+                   <!--배경색 넣기-->
+                    <div class="inner" style="background:#549054;">
+                    
+											<a data-tilt data-tilt-glare="false" data-tilt-max="7" class="c-logo" style="height:100%;">
+									  <span> </span>
+									</a>
+
+                      <!-- <img src="web/images/sub/bg_cafe.png" alt=""> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        
+        
+        
+        
+        
+        <!--2번째-->
+        <div class="product-wrap">
+            <div class="container">
+                <h2>BRANDING PRODUCTS</h2>
+                <p class="headline">GREENIC branding Products Weekly Best</p>
+                <ul>
+                    <li>
+                        <div class="img-wrap">
+                            <img src="./web/images/main/pakage_size_1.png" alt="">
+                        </div>
+                        <div class="data-wrap">
+                            <p class="name">그린티 잼</p>
+                            <p class="price">6,000원</p>
+                            <div class="view-date">
+                                <p class="good">102</p>
+                                <p class="commend">1,200</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-wrap">
+                            <img src="./web/images/main/pakage_size_2.png" alt="">
+                        </div>
+                        <div class="data-wrap">
+                            <p class="name">그린티 향수</p>
+                            <p class="price">10,000원</p>
+                            <div class="view-date">
+                                <p class="good">112</p>
+                                <p class="commend">1,100</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-wrap">
+                            <img src="./web/images/main/pakage_size_3.jpg" alt="">
+                        </div>
+                        <div class="data-wrap">
+                            <p class="name">그리닉 머그컵</p>
+                            <p class="price">5,500원</p>
+                            <div class="view-date">
+                                <p class="good">194</p>
+                                <p class="commend">1,000</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-wrap">
+                            <img src="./web/images/main/pakage_size_4.jpg" alt="">
+                        </div>
+                        <div class="data-wrap">
+                            <p class="name">그리닉 보틀</p>
+                            <p class="price">8,000원</p>
+                            <div class="view-date">
+                                <p class="good">64</p>
+                                <p class="commend">700</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-wrap">
+                            <img src="./web/images/main/pakage_size_55.jpg" alt="">
+                        </div>
+                        <div class="data-wrap">
+                            <p class="name">그리닉 녹차티백</p>
+                            <p class="price">10,000원</p>
+                            <div class="view-date">
+                                <p class="good">140</p>
+                                <p class="commend">1,210</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-wrap">
+                            <img src="./web/images/main/pakage_size_6.jpg" alt="">
+                        </div>
+                        <div class="data-wrap">
+                            <p class="name">그리닉 녹차팩</p>
+                            <p class="price">1,1000원</p>
+                            <div class="view-date">
+                                <p class="good">103</p>
+                                <p class="commend">1,005</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="package-wrap">
+            <div class="swiper-container">
+                <div class="package-cont">
+                    <div class="txt">
+                        <p>녹차 한 잔으로 전하는 마음</p>
+                        <h3>GREENIC이 추천하는 선물세트</h3>
+                    </div>
+                    <button>예약하기</button>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="web/images/main/dot_2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="web/images/main/dot_3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="web/images/main/dot_1.jpg" alt=""></div>
+
+                </div>
+                
+                
+                
+                
+                <!-- 스위퍼 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="cafe-wrap">
+            <div class="container">
+                <h2>BOSOEUNG GREEN TEA</h2>
+                <div class="cafe-info-wrap">
+                    <img src="web/images/sub/img_cafe01.png" alt="">
+                    <h3>맞춤추천</h3>
+                    <p>
+                        당신의 건강과 취향에 따라 <br/>
+                        녹차의 농도를 추천해드립니다.
+                    </p>
+                </div>
+                <div class="cafe-info-wrap">
+                    <img src="web/images/sub/img_cafe02.png" alt="">
+                    <h3>TEA CAFE</h3>
+                    <p>
+                        녹차향이 가득한 그리닉의 차를 <br/>
+                        즐길 수 있는 TEA CAFE를 만나보세요.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-wrap">
+            <div class="container">
+                <h2>CAFE MENU</h2>
+                <div class="menu-cont">
+                    <div class="img-wrap">
+                        <img src="web/images/sub/img_menu01.png" alt="">
+                        <img src="web/images/sub/img_menu02.png" alt="">
+                        <img src="web/images/sub/img_menu03.png" alt="">
+                        <img src="web/images/sub/img_menu04.png" alt="">
+                    </div>
+                    <div class="txt-wrap">
+                        <h3>ABOUT MENU</h3>
+                        <p>
+                            GREENIC CAFE는 대표적인 허브티인 따뜻한 녹차티와 차가운 녹차 티, 녹차라떼, 녹차프라푸치노, 녹차 아이스크림 등 다양한 음료와 디저트를 판매하는 공간입니다. 또한 건강을 고려하여 개인의 녹차 농도를 조절 가능하며 건강에 따라 녹차 농도를 조절해야 합니다. 또한 CAFE 내부는 녹차 인테리어로 구성되어 자연친화적인 공간과 소음이 작은 조용한 실내로 구성되어 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cafe-info">
+            <div class="container">
+                <ul>
+                    <li>
+                        <div class="img-wrap">
+
+                        </div>
+                        <p>건강 TEAS</p>
+                    </li>
+                    <li>
+                        <div class="img-wrap">
+
+                        </div>
+                        <p>자연친화적 공간</p>
+                    </li>
+                    <li>
+                        <div class="img-wrap">
+
+                        </div>
+                        <p>조용한 실내</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="comapny">
+                <a href="https://GEENIC TEA MUSEUM-online museum.com">https://GEENIC TEA MUSEUM-online museum.com</a>
+                <ul>
+                    <li>
+                        <h3>080-526-2222</h3>
+                        <p>고객 문의센터 / 주문문의</p>
+                    </li>
+                    <li>
+                        <p><span>평일</span>09:00 - 20:00</p>
+                        <p><span>주말</span>09:00 - 22:00</p>
+                        <p><span>공휴일</span>11:00 - 19:00</p>
+                    </li>
+                    <li>
+                        <p>
+                            점심 12:30 - 13:30<br/>
+                            (주) GREENIC <br/>
+                            주소: 전남 보성시 1273
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="sns">
+                <button class="btn-facebook" onclick="location.href='http://www.facebook.com'"></button>
+                <button class="btn-twiter" onclick="location.href='http://www.twitter.com'"></button>
+                <button class="btn-instargram" onclick="location.href='http://www.instagram.com'"></button>
+                <button class="btn-youtube" onclick="location.href='http://www.youtube.com'"></button>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="javascript:void(0);">뮤지엄 안내</a></li>
+                    <li><a href="javascript:void(0);">멤버십혜택</a></li>
+                    <li><a href="javascript:void(0);">FAQ</a></li>
+                    <li><a href="javascript:void(0);">뮤지엄 위치</a></li>
+                    <li><a href="javascript:void(0);">1:1 문의</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+		<script type="text/javascript">
+
+
+
+		var xmouse, ymouse;
+
+		$(document).mousemove(function(e) {
+			 xmouse = e.clientX || e.pageX;
+			 ymouse = e.clientY || e.pageY;
+		});
+
+		var ball = $('#ball');
+		var x = void 0,
+		y = void 0,
+		dx = void 0,
+		dy = void 0,
+		tx = 0,
+		ty = 0,
+		key = -1;
+		//
+		var followMouse = function followMouse(){
+			key = requestAnimationFrame(followMouse);
+
+			if (!x || !y) {
+				x = xmouse;
+				y = ymouse;
+			}
+			else {
+				dx = (xmouse - x) * 0.125;
+				dy = (ymouse - y) * 0.125;
+
+				if ( Math.abs(dx) + Math.abs(dy) < 0.1 ) {
+					x = xmouse;
+					y = ymouse;
+				}
+				else {
+					x +=dx;
+					y += dy;
+				}
+			}
+
+			$('#ball').css("left",x+'px');
+			$('#ball').css("top",y+'px');
+
+		}
+
+
+
+		</script>
+		
+		
+		
+		<script src="web/js/tilt.jquery.js"></script>
+		
+		
+		
+		<script type="text/javascript">
+		$('.js-tilt').tilt({
+    glare: false,
+    maxGlare: .5
+		});
+
+		</script>
+		
+		
+		<!--틸트효과-->
+</body>
+</html>
